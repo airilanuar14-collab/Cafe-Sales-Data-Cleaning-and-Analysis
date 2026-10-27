@@ -142,11 +142,30 @@ Location is unknown for 3,961 transactions (39.6%, worth 35,369.5 in sales), so 
 
 ## Business Recommendations
 
-*To be updated based on the actual findings.*
+Based on the sales analysis, the following recommendations could help the cafe improve sales performance, product planning, and operational decision-making.
 
-Potential recommendations may include reviewing inventory planning, identifying products for further investigation, and evaluating staffing needs based on observed sales patterns.
+1. Overall Sales Performance
+- Investigate transactions with missing or unrecoverable totals to identify potential issues in data entry or transaction recording.
+- Use average transaction value as a baseline for monitoring changes in spending patterns over time, rather than treating a single period as a performance target.
+2. Monthly Sales Trends
+- Investigate factors that may explain monthly fluctuations, such as promotions, product availability, operating days, and seasonal demand.
+- Compare sales across equivalent periods and consider the number of operating days when evaluating monthly performance.
+- Review the November and December declines to determine whether they reflect normal seasonal variation or specific operational factors.
+- Use historical monthly sales patterns to support inventory planning and promotional scheduling, while validating the trends with additional data where available.
+3. Product Performance
+- Prioritize stock availability for high-volume products such as Coffee and Salad to reduce the risk of stockouts.
+- Review Salad's sales contribution and consider maintaining its availability, while assessing its ingredient costs and profitability before making major investment decisions.
+- Evaluate opportunities to increase the sales value of popular lower-priced products through suitable product combinations or optional add-ons, provided these align with customer preferences.
+- Avoid discontinuing lower-ranked products based on sales revenue alone. Consider unit demand, ingredient costs, waste, and profit margins before making product assortment decisions.
+4. Sales by Day of the Week
+- Review staffing and inventory requirements for Thursday, Friday, and Sunday to ensure the cafe can accommodate observed demand.
+- Consider testing targeted midweek promotions and evaluate their results before adopting them permanently.
+5. In-Store vs Takeaway
+- Improve the completeness of transaction location records so that future comparisons between in-store and takeaway sales are more reliable.
+- Investigate whether suitable product bundles or optional add-ons could increase takeaway transaction values, and test these initiatives before expanding them.
+6. Data Quality and Reporting Improvements
+- Fix data capture first. 32% of transactions have no payment method, 40% have no location and 5% have no date. That makes channel and payment analysis unreliable. Make these fields required at the till, and validate that quantity × price = total at entry.
 
-Recommendations will be made only where supported by the analysis.
 
 ## Limitations
 
