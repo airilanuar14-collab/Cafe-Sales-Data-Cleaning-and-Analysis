@@ -66,7 +66,6 @@ The following checks and cleaning activities are planned for this project:
    - Compare the dataset before and after cleaning.
    - Document the final dataset dimensions and any remaining limitations.
 
-*Note: The actual cleaning decisions and results will be documented after the process is completed.*
 
 ## Research Questions
 
@@ -120,13 +119,26 @@ Planned visualizations include:
 
 ## Key Findings
 
-*To be updated after completing the analysis.*
-
-- **Overall Sales:** [Insert key finding]
-- **Monthly Trends:** [Insert key finding]
-- **Product Performance:** [Insert key finding]
-- **Sales by Day:** [Insert key finding]
+1. **Overall Sales Performance**
+- Total sales revenue: $89,096, across 9,977 transactions with a known total. Another 23 transactions have no recoverable total and aren't counted.
+- Average transaction value: $8.93 (median 8.00). Values move in steps because menu prices are fixed and quantities run from $1 to $5, so transactions range from 1.0 to 25.0.
+2. **Monthly Trends**
+- Average Monthly Sales: The average monthly sales were approximately $7,076.88, based on total annual sales of $84,922.50 across 12 months.
+- Month-to-Month Trends: Sales fluctuated throughout the year rather than following a consistent upward or downward trend. Sales increased from February to March, declined slightly in May, and reached their highest level in June before fluctuating during the second half of the year. Sales rose again in October before declining in November and December.
+- Highest and lowest month: June recorded the highest total sales at $7,353 while February  February recorded the lowest total sales a at $6,644, about 11% below June. February's low is partly the calendar, since it has 28 days.
+3. **Product Performance**
+- Most popular by units sold: Coffee (3,904), followed by Salad (3,819), Tea (3,650) and Cookie (3,598). Coffee also leads on transactions (1,291). Smoothie is lowest at 3,336.
+- Highest total sales: Salad ($19,095), about 23% of sales. Sandwich ($13,716) and Smoothie ($13,344) follow. Cookie is lowest at $3,598.
+- The most popular products are not the biggest earners. Coffee is 1st on units sold but 6th on sales, because it costs $2. Sandwich are 7th on units sold but 2nd on sales.
+4. **Sales by Day:**
+- Day with highest total sales: Thursday ($12,401.5), then Friday ($12,334.0) and Sunday ($12,287.5). Wednesday is lowest ($11,680.5). Thursday also leads on average daily sales (238.5 vs 224.6 for Wednesday). That comparison matters because 2023 had 53 Sundays and 52 of every other day.
+- Transaction counts are close across the week. Friday has the most (1,388) and Tuesday the fewest (1,311), a spread of about 6%. Every weekday averages 25 to 27 transactions a day.
 - **Order Type Comparison:** [Insert key finding]
+5. **In-Store vs Takeaway**
+- Total sales: In-store $27,174.0 vs Takeaway $26,552.5. The gap is $621.5, or 2.3%, which is 50.6% vs 49.4% of sales where the location is known.
+- Transaction counts: 3,017 in-store vs 3,022 takeaway, effectively identical.
+- Average transaction value: 9.03 in-store vs 8.80 takeaway. The 0.23 gap is about 1.5 standard errors, which isn't convincing evidence of a real difference. In-store's small edge in sales comes from slightly higher spend per transaction, not more transactions.
+Location is unknown for 3,961 transactions (39.6%, worth 35,369.5 in sales), so this comparison covers about 60% of the data.
 
 ## Business Recommendations
 
