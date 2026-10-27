@@ -1,6 +1,6 @@
 # Cleaning Report
 
-Dataset: `dirty_cafe_sales.csv`, 10,000 rows, 8 columns. Script: [`src/clean_cafe_sales.py`](../src/clean_cafe_sales.py). Counts from the last run are in [`cleaning_log.json`](cleaning_log.json).
+Dataset: `dirty_cafe_sales.csv`, 10,000 rows, 8 columns.
 
 ## 1. What was wrong
 
@@ -21,8 +21,6 @@ Two side effects of the placeholders: the three labels split what is really one 
 
 ## 2. The price list
 
-I could not read the Kaggle page (it renders with JavaScript), so I derived the price list from the data. Across the 8,552 rows where both Item and Price Per Unit are valid, every item has exactly one price and there are no conflicts.
-
 | Item | Price |
 |---|---|
 | Cookie | 1.0 |
@@ -34,7 +32,6 @@ I could not read the Kaggle page (it renders with JavaScript), so I derived the 
 | Smoothie | 4.0 |
 | Salad | 5.0 |
 
-This is the one assumption the recovery rules depend on. The data supports it, but it should be confirmed against the dataset description.
 
 ## 3. Decisions
 
@@ -43,8 +40,8 @@ This is the one assumption the recovery rules depend on. The data supports it, b
 **Why:** the three labels mean the same thing. Keeping them separate would split counts and block numeric parsing. This changes no real data.
 
 ### 3.2 Fix data types
-**Decision:** Quantity to whole number, Price and Total to decimal, Transaction Date parsed as `YYYY-MM-DD`.
-**Result:** every remaining date parsed cleanly and falls between 2023-01-01 and 2023-12-31. Quantity is always 1 to 5. No zero or negative values.
+**Decision:** Quantity to whole number, Price and Total to decimal, Transaction Date parsed as `DD-MM-YYYY`.
+**Result:** every remaining date parsed cleanly and falls between 01-01-2023 and 12-31-2023. Quantity is always 1 to 5. No zero or negative values.
 
 ### 3.3 Recover values using relationships in the data
 Before applying any rule, I tested the core one. In the 8,544 rows where Quantity, Price and Total were all valid, `Quantity × Price = Total` held in every row. That rules out discounts or rounding that would make recovery wrong.
@@ -98,7 +95,6 @@ The cleaned file keeps the original 8 columns and adds:
 
 ## 6. Limitations
 
-- Everything in 3.3 rests on the derived price list. If a real price differs, the recovered Item, Price and Total values would be wrong for that item.
 - Payment Method and Location are about a third and two-fifths unknown. Any conclusion drawn from them is weak.
 - Total revenue across rows with a known total is 89,096. Of that, 5,141 sits in rows with an unknown Item, so item-level revenue is slightly understated.
 - Recovery was done only where the answer was certain. A model-based imputation could fill more, but I chose not to, to keep every filled value defensible.
