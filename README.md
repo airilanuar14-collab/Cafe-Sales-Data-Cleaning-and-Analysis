@@ -164,3 +164,9 @@ Based on the sales analysis, the following recommendations could help the cafe i
 - Missing or invalid values may affect calculated sales metrics and comparisons.
 - The dataset does not provide sufficient information to calculate actual profit, operating costs, or individual customer behavior.
 - Observed patterns do not necessarily establish causal relationships.
+
+## Conclusion
+
+This project demonstrates an end-to-end beginner data analytics workflow, from investigating and cleaning a messy dataset to analysing business performance and presenting findings through an interactive Excel dashboard.
+
+By combining data quality checks, exploratory analysis, and interactive filtering, the project provides a practical way to explore cafe sales performance and communicate findings that can support further business investigation.
