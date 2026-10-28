@@ -170,3 +170,8 @@ Based on the sales analysis, the following recommendations could help the cafe i
 This project demonstrates an end-to-end beginner data analytics workflow, from investigating and cleaning a messy dataset to analysing business performance and presenting findings through an interactive Excel dashboard.
 
 By combining data quality checks, exploratory analysis, and interactive filtering, the project provides a practical way to explore cafe sales performance and communicate findings that can support further business investigation.
+
+## Dashboard Preview & Interaction
+
+<img width="631" height="586" alt="image" src="https://github.com/user-attachments/assets/80abf06d-6292-40a2-8601-aec4de311938" />
+
