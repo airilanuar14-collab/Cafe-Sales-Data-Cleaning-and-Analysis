@@ -2,11 +2,14 @@
 
 ## Project Overview
 
-This project focuses on cleaning and analyzing a dirty cafe sales dataset to improve data quality and generate meaningful business insights.
+This project focuses on cleaning and analysing a cafe sales dataset containing missing values, inconsistent entries, and other data quality issues. Microsoft Excel was used to clean the data, perform exploratory data analysis, and build an interactive dashboard using PivotTables, PivotCharts, Slicers, and Timeline.
+
+The goal is to transform raw sales data into meaningful business insights that can help understand sales performance, product popularity, monthly trends, and customer purchasing patterns.
 
 The dataset contains transaction records with data quality issues such as missing values, inconsistent entries, and invalid values. The project begins with data inspection and cleaning before proceeding to exploratory data analysis (EDA) to understand cafe sales performance and purchasing patterns.
 
-**Tools:** Microsoft Excel, Tableau
+## Tools 
+Microsoft Excel : Data cleaning, data validation, exploratory analysis, PivotTables, PivotCharts, interactive Slicers, Timeline, and dashboard development.
 
 ## Project Objectives
 
@@ -16,7 +19,6 @@ The dataset contains transaction records with data quality issues such as missin
 - Analyze overall sales performance and monthly sales trends.
 - Identify popular products and products contributing the highest sales.
 - Examine sales patterns by day of the week.
-- Compare sales performance between in-store and takeaway transactions.
 
 ## Dataset
 
@@ -86,10 +88,6 @@ The following checks and cleaning activities are planned for this project:
 - Which day of the week records the highest total sales?
 - How does the number of transactions compare across different days?
 
-### 5. In-Store vs Takeaway
-- How do total sales differ between in-store and takeaway transactions?
-- How do transaction counts and average transaction values compare between the two order types?
-
 ## Data Analysis
 
 The analysis will focus on the following metrics:
@@ -101,21 +99,23 @@ The analysis will focus on the following metrics:
 - Units Sold by Product
 - Total Sales by Product
 - Sales by Day of the Week
-- Sales by Order Type
 
 The analysis will use cleaned and validated records, with exclusions and limitations documented where relevant.
 
 ## Visualizations
 
-Planned visualizations include:
+An interactive dashboard was developed in Microsoft Excel using PivotTables, PivotCharts, Slicers, and Timeline.
 
-- KPI cards for total sales, valid transactions, and average transaction value.
+The dashboard is designed to help users explore sales performance dynamically without manually changing the underlying analysis.
+
+**Dashboard components:**
+
+- KPI cards for total sales, total of valid transactions, and average transaction value.
 - Line chart for monthly sales trends.
-- Horizontal bar charts for product popularity and sales contribution.
-- Bar chart for sales by day of the week.
-- Bar charts comparing in-store and takeaway performance.
-
-**Dashboard:** [Insert Tableau Public link]
+- bar charts for product popularity and sales contribution.
+- Horizontal Bar chart for sales by day of the week.
+- Interactive Slicers for selected dimensions such as Item and Payment Method
+- Timeline for filtering transaction dates
 
 ## Key Findings
 
