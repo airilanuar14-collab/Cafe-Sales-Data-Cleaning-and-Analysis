@@ -86,12 +86,9 @@ A second pass found nothing new. In total, 1,841 rows had at least one field rec
 - No row has an Item whose price disagrees with the price list: 0 conflicts.
 - No non-integer quantities.
 
-## 5. Output columns
+## 5. Output
 
-The cleaned file keeps the original 8 columns and adds:
-
-- `Recovered Fields`: lists which fields in that row were filled in by a rule (1,841 rows have an entry).
-- `Analysis Ready`: the flag described in 3.5.
+The cleaned file keeps the original 8 columns and 10001 rows
 
 ## 6. Limitations
 
